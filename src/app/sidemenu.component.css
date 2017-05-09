@@ -1,0 +1,41 @@
+:host{
+  float: left;
+  position: absolute;
+
+  height:100%;
+  width:10%;
+  margin: 0;
+
+  background-color: black;
+  opacity: 0.75;
+}
+
+#menu-container{
+  height: 100%;
+  width: 100%;
+  float: left;
+  z-index: 2;
+  color: white;
+}
+
+#menu{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#menu > li{
+  padding: 20px;
+  font-size: 2em;
+}
+
+#menu > li:hover {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+}
+
+#menu-header{
+  padding: 10px 0px;
+  height:100%;
+  background-color: grey;
+}
