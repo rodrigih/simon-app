@@ -1,8 +1,24 @@
 <div class='circle center flex-container' id='game-board'>
-  <div class='game-piece' id='top-left'></div>
-  <div class='game-piece' id='top-right'></div>
-  <div class='game-piece' id='bottom-left'></div>
-  <div class='game-piece' id='bottom-right'></div>
+
+  <div [@changeColour]='this.colourStates.green'
+       (click)="this.lightPiece('green')"
+       class='game-piece'
+       id='top-left'></div>
+
+  <div [@changeColour]='this.colourStates.red'
+       (click)="this.lightPiece('red')"
+       class='game-piece'
+       id='top-right'></div>
+
+  <div [@changeColour]='this.colourStates.yellow'
+       (click)="this.lightPiece('yellow')"
+       class='game-piece'
+       id='bottom-left'></div>
+
+  <div [@changeColour]='this.colourStates.blue'
+       (click)="this.lightPiece('blue')"
+       class='game-piece'
+       id='bottom-right'></div>
 
   <div class='center circle' id='center-circle'><span class='center'>00</span></div>
 </div>
