@@ -7,6 +7,7 @@ export class GameLogicService {
   private playerIndex = 0; // index in sequence that player is guessing
   private gameMode = 'normal';
   private lives = 3;
+  private score = 0;
 
   /* Randomly chooses colour */
   private chooseColour(){
@@ -21,6 +22,7 @@ export class GameLogicService {
     this.lives = 3;
     this.sequence = [this.chooseColour()];
     this.playerIndex = 0;
+    this.score = 0;
   }
 
   /* Returns string whose value depends if player guessed correctly
@@ -43,6 +45,7 @@ export class GameLogicService {
       this.playerIndex = 0;
       this.addToSequence();
 
+      this.score++;
       return 'new';
     }
 
@@ -51,5 +54,13 @@ export class GameLogicService {
 
   getSequence(){
     return this.sequence;
+  }
+
+  getLives(){
+    return this.lives;
+  }
+
+  getScore(){
+    return this.score;
   }
 }
