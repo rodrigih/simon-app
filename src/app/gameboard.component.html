@@ -1,22 +1,22 @@
 <div class='circle center flex-container' id='game-board'>
 
   <div [@changeColour]='this.colourStates.green'
-       (click)="this.lightPiece('green')"
+       (click)="this.pressPiece('green')"
        class='game-piece'
        id='top-left'></div>
 
   <div [@changeColour]='this.colourStates.red'
-       (click)="this.lightPiece('red')"
+       (click)="this.pressPiece('red')"
        class='game-piece'
        id='top-right'></div>
 
   <div [@changeColour]='this.colourStates.yellow'
-       (click)="this.lightPiece('yellow')"
+       (click)="this.pressPiece('yellow')"
        class='game-piece'
        id='bottom-left'></div>
 
   <div [@changeColour]='this.colourStates.blue'
-       (click)="this.lightPiece('blue')"
+       (click)="this.pressPiece('blue')"
        class='game-piece'
        id='bottom-right'></div>
 
@@ -25,4 +25,6 @@
 
 <div>
   <p> 3 Lives Remaining</p>
+  <button class='btn btn-default' (click)="this.playSequence()">Play Sequence</button>
+  <button (click)="this.addToSequence()">Add to Sequence</button>
 </div>
