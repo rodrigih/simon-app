@@ -20,11 +20,13 @@
        class='game-piece'
        id='bottom-right'></div>
 
-  <div class='center circle' id='center-circle'><span class='center'>00</span></div>
+  <div class='center circle' id='center-circle'><span class='center' id='score'>
+    {{this.gameLogicService.getScore()}}
+  </span></div>
 </div>
 
 <div>
-  <p> 3 Lives Remaining</p>
+  <p> {{this.gameLogicService.getLives()}} Lives Remaining</p>
   <button class='btn btn-default' (click)="this.playSequence()">Play Sequence</button>
   <button (click)="this.addToSequence()">Add to Sequence</button>
 </div>

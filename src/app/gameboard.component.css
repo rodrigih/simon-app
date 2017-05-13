@@ -52,3 +52,9 @@
   border-bottom-right-radius: 100%;
   background-color: #025DE1;  /*Change this colour*/
 }
+
+#score{
+  font-family: 'Orbitron';
+  font-size: 2em;
+  color: red;
+}

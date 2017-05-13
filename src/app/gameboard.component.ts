@@ -104,13 +104,10 @@ export class GameBoardComponent {
      var index = 0;
 
      this.busy = true;
-     console.log(index);
 
      var id = setInterval(() => {
-      console.log(index);
       if(index >= seq.length) {
         clearInterval(id);
-        console.log('cleared');
         this.busy = false;
         return;
       }
