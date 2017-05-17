@@ -1,0 +1,28 @@
+#dropdown{
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  margin: 0;
+  width:90%;
+  height:100%;
+
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+
+  font-size: 2em;
+  z-index: 2;
+}
+
+#content{
+
+  width:70%;
+  margin: 20px auto;
+}
+
+#close-btn{
+  float: left;
+  text-align: left;
+  cursor: pointer;
+}
