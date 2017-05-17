@@ -19,7 +19,7 @@
   align-items: center;
   align-self: center;
 
-  background-color: dimgrey;
+  background-color: #171717;
   height: 400px;
   width: 400px;
   margin: 20px;
@@ -31,7 +31,7 @@
   text-align: center;
   height: 200px;
   width: 200px;
-  background-color: dimgrey;
+  background-color: #171717;
   position: absolute;
   z-index: 1;
 }
