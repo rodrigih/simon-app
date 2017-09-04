@@ -6,15 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { GameBoardComponent } from './gameboard.component';
-import { SideMenuComponent } from './sidemenu.component';
-import { DropdownComponent } from './dropdown.component';
+import { MenuContainerComponent } from './menu-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameBoardComponent,
-    SideMenuComponent,
-    DropdownComponent
+    MenuContainerComponent,
   ],
   imports: [
     BrowserAnimationsModule,

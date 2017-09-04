@@ -1,0 +1,60 @@
+<!--
+<div id='menu-container'>
+  <side-menu></side-menu>
+  <dropdown></dropdown>
+</div>
+-->
+
+<nav>
+  <div id="side-menu">
+    <div id="menu-header">
+      <i class="material-icons md-48">menu</i>
+    </div>
+    <ul id="menu">
+      <li *ngFor="let item of sideMenuItems"
+          (click)="this.showDropDown(item)">
+          {{item}}
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div [@drop]='this.dropDownState'
+     id='dropdown'>
+
+  <i (click)="this.hideDropDown()"
+     class="material-icons md-48"
+     id='close-btn'>close</i>
+
+  <div *ngIf="this.selectedItem.toLowerCase() === 'how to play'" class="content">
+    <h2>How to Play</h2>
+    <p>The object of the game is to copy the sequence of buttons shown by the computer.
+      The sequence starts with one button and increases by one button for each time
+      the player correctly plays the sequence.</p>
+
+    <p>The game is won when the player gets the sequence of 20 buttons correct.</p>
+
+    <p>Should the player guess the sequence wrong, the sequence is repeated.</p>
+
+    <h2>Strict Mode</h2>
+    <p> Strict mode has the same rules as above, but if a player guesses wrong,
+      a new sequence of the same length is shown.</p>
+
+    <h2>Endless Mode</h2>
+    <p>Endless mode has the same rules as the regular game mod,e but it continues
+    endlessly. If the player guesses wrong, the game resets and starts over.</p>
+  </div>
+
+  <div *ngIf="this.selectedItem.toLowerCase() === 'options'" class="content">
+    Options
+  </div>
+
+  <div *ngIf="this.selectedItem.toLowerCase() === 'high score'" class="content">
+    High Score
+  </div>
+
+  <div *ngIf="this.selectedItem.toLowerCase() === 'credits'" class="content">
+    This app was made by Rodrigo Hernandez
+  </div>
+
+</div>

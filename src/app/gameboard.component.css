@@ -22,6 +22,8 @@
   background-color: #171717;
   height: 400px;
   width: 400px;
+  min-height: 400px;
+  min-width: 400px;
   margin: 20px;
 }
 

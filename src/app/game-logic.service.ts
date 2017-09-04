@@ -9,6 +9,10 @@ export class GameLogicService {
   private lives = 3;
   private score = 0;
 
+  getSequence(){ return this.sequence; }
+  getLives(){ return this.lives; }
+  getScore(){ return this.score; }
+
   /* Randomly chooses colour */
   private chooseColour(){
     return this.colours[Math.floor(Math.random() * this.colours.length)];
@@ -50,17 +54,5 @@ export class GameLogicService {
     }
 
     return 'right';
-  }
-
-  getSequence(){
-    return this.sequence;
-  }
-
-  getLives(){
-    return this.lives;
-  }
-
-  getScore(){
-    return this.score;
   }
 }

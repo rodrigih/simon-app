@@ -1,0 +1,75 @@
+/*
+#menu-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  margin: 0;
+  z-index: 1;
+}
+*/
+
+/* CSS for the side-menu*/
+#side-menu{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: #343434;
+  height: 100%;
+  width: 10%;
+  float: left;
+  z-index:2;
+  color: white;
+}
+
+#menu{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#menu > li{
+  padding: 20px;
+  font-size: 2em;
+}
+
+#menu > li:hover {
+    background-color: white;
+    color: black;
+}
+
+#menu-header{
+  padding: 10px 0px;
+  height:3em;
+  background-color: grey;
+}
+
+/* CSS for the dropdown menu */
+.content{
+  width:70%;
+  margin: 20px auto;
+  overflow: auto;
+}
+
+#dropdown{
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  margin: 0;
+  width:90%;
+  height:100%;
+
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+
+  font-size: 2em;
+  z-index: 2;
+}
+
+#close-btn{
+  float: left;
+  text-align: left;
+  cursor: pointer;
+}
